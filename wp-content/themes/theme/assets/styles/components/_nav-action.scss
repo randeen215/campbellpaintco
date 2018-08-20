@@ -1,0 +1,35 @@
+.bbi-nav-action {
+	float: left;
+	line-height: 12px;
+	position: relative;
+	padding: 16px 30px;
+	
+	li {
+		border-right:2px solid $clr-brand-2;
+		display: inline-block; 
+		
+		&:last-of-type {
+			border:0; 
+		}
+		
+		a {
+	 		color:$clr-brand;
+	 		font-family: $font-main;
+	 		font-size: 1.4rem;
+	 		font-weight: 700;
+	 		padding:0 10px;
+	 		text-align:center;
+	 	}
+	}
+
+	@include responsive(sm) {
+	 	width: auto;
+	 	margin-top: 20px;
+	}
+
+	@include responsive(md) {
+		margin-top: 0;
+	}
+
+
+}

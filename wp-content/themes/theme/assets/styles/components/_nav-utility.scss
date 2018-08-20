@@ -1,0 +1,56 @@
+.bbi-utility-wrap {
+
+	@include full-cont;
+	background: $clr-brand-dark;
+	padding: 0 30px;
+
+	@include responsive(md) {
+		background: none;
+		float: right;
+
+	}
+
+}
+
+.bbi-nav-utility {
+	margin-bottom: 15px;
+
+	@include responsive(md) {
+		float: right;
+		margin: 12px 25px 0;
+
+		li {
+			display: inline-block;
+			@include nav-sep;
+
+			a {
+				color: $clr-white;
+
+				@include hover-state {
+					color: $clr-brand;
+				}
+				
+
+				@include responsive(md) {
+					color: $clr-brand;
+					font-weight: 700;
+					border: 0;
+
+					@include hover-state {
+						color: $clr-brand-2;
+						border: {
+							color: $clr-transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.fa-phone:before {
+	content: "\f095";
+	font-family: "FontAwesome";
+	font-size: 1.5rem;
+	padding-right:5px;
+}
